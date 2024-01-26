@@ -45,7 +45,7 @@ Ogni classificatore si è addestrato sui falsi positivi delle fasi precedenti
 
 La localizzazione dei volti avviene analizzando sottofinestre consecutive (sovrapposte) dell'immagine come input e valutando per ognuna di esse se appartiene alla classe dei volti.
 Tags: face-recog face
-
+<!--ID: 1706223018425-->
 END
 
 ---
@@ -60,7 +60,7 @@ Se diamo allarmi per un false rejection, possiamo creare panico, quindi anche FR
 
 In generale, FA è la situazione più critica ma la criticità dipende dal tipo di applicazioni.
 Tags: evaluation
-
+<!--ID: 1706223018434-->
 END
 
 ---
@@ -81,7 +81,7 @@ Quindi sono campioni che potrebbero essere classificati erroneamente
 
 Dobbiamo sottolineare l'addestramento del sistema facendo in modo che il sistema impari dalle immagini che possono ingannarlo.
 Tags: evaluation machine-learning
-
+<!--ID: 1706223018441-->
 END
 
 ---
@@ -118,7 +118,7 @@ Si ottengono rilassando l'unicità; possiamo ricavare dei tratti biometrici che 
 
 I Soft Biometric Traits mancano di unicità (ad es. colore dei capelli, forma del corpo) o di permanenza (ad es. comportamenti che sono influenzati dall'umore, dalla salute, ecc.).
 Tags: traits evaluation
-
+<!--ID: 1706223018449-->
 END
 
 ---
@@ -131,7 +131,7 @@ I **tratti comportamentali** o **Behavioral traits** sono difficili da riprodurr
 
 Esempi di caratteristiche comportamentali sono la biometria delle **firme** e la digitazione delle **chiavi**.
 Tags: traits evaluation
-
+<!--ID: 1706223018457-->
 END
 
 ---
@@ -150,7 +150,7 @@ Il punto fornito dalla soglia in cui FAR e FRR hanno raggiunto un valore simile 
 
 L'EER non è una soglia ma è il valore che abbiamo raggiunto impostando una soglia di similarità dove il FAR è uguale al FRR.
 Tags: face-recog evaluation
-
+<!--ID: 1706223018466-->
 END
 
 ---
@@ -171,7 +171,7 @@ Abbiamo in questo caso **due scenari**: in uno scenario il probe appartiene ad u
 
 Questo perché anche un utente autentico può dichiarare un'identità sbagliata.
 Tags: face-recog evaluation
-
+<!--ID: 1706223018474-->
 END
 
 ---
@@ -196,7 +196,7 @@ non sono sufficienti per dare una valutazione approfondita degli algoritmi
 
 Per un **confronto affidabile** dei sistemi dobbiamo considerare: il numero e le caratteristiche dei database utilizzati; dimensione delle immagini (immagini più grandi possono rappresentare una risoluzione maggiore); dimensione del Probe e della Gallery (in particolare la dimensione relativa); quantità e qualità delle variazioni indirizzate e tollerate; possibile **interoperabilità** (ad es. generalizzazione tra set di dati).
 Tags: face-recog evaluation
-
+<!--ID: 1706223018481-->
 END
 
 ---
@@ -215,7 +215,7 @@ Più alta è la curva verso la metà superiore sinistra del quadrante delle coor
 
 Abbiamo un intervallo da 0 a 1. Potrebbe essere difficile confrontare i sistemi in base alle curve, quindi possiamo utilizzare l'area sotto la curva ROC come valore unico per il confronto.
 Tags: face-recog evaluation
-
+<!--ID: 1706223018488-->
 END
 
 ---
@@ -276,7 +276,7 @@ Quello che ci interessa di più è CMS al rango 1, cioè qual è la probabilità
 
 Questo valore speciale è anche noto come **Recognition Rate**.
 Tags: face-recog metrics evaluation
-
+<!--ID: 1706223018496-->
 END
 
 ---
@@ -287,7 +287,7 @@ L’Identification open set è più difficile della verifica?
 Back: 
 L'attività di identificazione open set è molto più difficile per i sistemi biometrici (ma anche per gli operatori umani) rispetto all'attività di verifica, perché dobbiamo soddisfare sia l’acceptance threshold che restituire la persona corretta come identità riconosciuta.
 Tags: face-recog metrics evaluation
-
+<!--ID: 1706223018504-->
 END
 
 ---
@@ -316,7 +316,7 @@ Con un sensore ad altissima risoluzione è possibile studiare anche i **pori** l
 
 Sono chiamati "**third level features**".
 Tags: fingerprints
-
+<!--ID: 1706223018511-->
 END
 
 ---
@@ -335,7 +335,7 @@ Per le curve chiuse, l'indice di Poincaré assume solo uno dei valori discreti 0
 
 In particolare, per quanto riguarda le singolarità delle impronte digitali: 0° significa che non ci sono singolarità; 360° denota la presenza di un vortice; 180° indica un loop; -180° denota un delta.
 Tags: fingerprints
-
+<!--ID: 1706223018519-->
 END
 
 ---
@@ -348,7 +348,7 @@ Una **directional map** (o directional image) che è una matrice discreta i cui 
 
 È una matrice in cui ogni elemento corrispondente al nodo \[i, j\], che si sovrappone all'immagine dell'impronta digitale, denota l'orientamento medio della cresta tangente o l'orientamento in un piccolo vicinato.
 Tags: fingerprints
-
+<!--ID: 1706223018526-->
 END
 
 ---
@@ -371,7 +371,7 @@ Se invece è uguale a 3, indica una biforcazione
 
 Se è maggiore di 3, allora appartiene a una minuzia più complessa.
 Tags: fingerprints
-
+<!--ID: 1706223018535-->
 END
 
 ---
@@ -386,7 +386,7 @@ Il Ridge Count è il numero di creste che separano due minuzie
 
 Questo non può essere fatto per ogni coppia di minuzie perché gli endpoint non sono abbastanza affidabili (possono essere causati dall'interruzione di una cresta a causa di una soglia errata o altro).
 Tags: 
-
+<!--ID: 1706223018542-->
 END
 
 ---
@@ -405,7 +405,7 @@ L'acquisizione delle impronte latenti avviene grazie a speciali polveri e a part
 
 Il problema dell'allineanento consiste nel confrontare due impronte e vedere se sono la stessa, in particolare impronte latenti con impronte complete.
 Tags: fingerprints
-
+<!--ID: 1706223018551-->
 END
 
 ---
@@ -428,7 +428,7 @@ Il modello mappa ogni punto dell'iride in coordinate polari dove il centro delle
 
 Durante la trasformazione, le nuove coordinate per ogni punto sono date da una combinazione lineare tra le coordinate del contorno pupillare e quelle del contorno esterno dell'iride.
 Tags: iris
-
+<!--ID: 1706223018558-->
 END
 
 ---
@@ -443,7 +443,7 @@ Randotipico significa che non è affetto da eredità familiare (non c'è familia
 
 Quindi l'iride è un tratto estremamente distintivo (l'iride destra è diversa da quella sinistra e anche i gemelli hanno iridi diverse).
 Tags: iris
-
+<!--ID: 1706223018566-->
 END
 
 ---
@@ -478,7 +478,7 @@ Tutte le differenze di colore vengono eliminate
 
 Inoltre c'è un altro problema: i sensori vicini all'infrarosso non sono universalmente disponibili come quelli a luce visibile.
 Tags: iris
-
+<!--ID: 1706223018574-->
 END
 
 ---
@@ -489,7 +489,7 @@ Quali sono i problemi che possono sorgere nel riconoscimento dell'iride?
 Back: 
 I problemi che possiamo avere nell’Iris Recognition sono: la **Riflessione**; le piccole **dimensioni** dell’iride; l'**alta risoluzione** richiesta dall'apparecchiatura; la limitata **profondità di campo** per cui dobbiamo prestare attenzione ai problemi di messa a fuoco e fuori fuoco; dobbiamo allinearci con l'asse ottico a meno che non usiamo alcuni accorgimenti come il cosiddetto "**problema fuori asse**" (se la persona guarda in un'altra direzione, l'iride non sarà esattamente al centro della sclera, ma si sposterà verso l'estremità destra o sinistra della sclera); l'eventuale presenza di **occhiali o lenti a contatto**.
 Tags: iris
-
+<!--ID: 1706223018582-->
 END
 
 ---
@@ -506,7 +506,7 @@ Quindi, invece di restituire una class label, viene restituita una graduatoria d
 
 Nel **Borda Count** le classifiche vengono poi convertite in punteggi che vengono sommati; la classe con il punteggio finale più alto è quella scelta dal multiclassificatore.
 Tags: iris
-
+<!--ID: 1706223018591-->
 END
 
 ---
@@ -541,7 +541,7 @@ Alla fine, abbiamo il caso dello stesso tratto o di tratti diversi (ma in genera
 
 Ad esempio possiamo utilizzare due sensori diversi per acquisire la stessa impronta digitale (entrambi ottici o entrambi capacitivi o uno ottico e uno capacitivo o ecc...) e poi fondere i risultati.
 Tags: multibiometrics
-
+<!--ID: 1706223018599-->
 END
 
 ---
@@ -586,7 +586,7 @@ Ad esempio, in caso di verifica potremmo avere una risposta Sì o No da ciascuno
 
 Il **punto debole** di questo approccio è che ogni volta che qualcosa va storto, abbiamo perso tutte le informazioni che potrebbero essere utili per valutare il comportamento del sistema.
 Tags: multibiometrics
-
+<!--ID: 1706223018608-->
 END
 
 ---
@@ -599,7 +599,7 @@ I punteggi di diversi matcher possono essere **non omogenei**: similarità/ dist
 
 Un altro problema è dato dall'**Affidabilità** dei diversi sistemi.
 Tags: multibiometrics
-
+<!--ID: 1706223018615-->
 END
 
 ---
@@ -630,7 +630,7 @@ C'è solo un problema che in qualche modo impedisce la piena flessibilità di qu
 
 Sono possibili diversi metodi, tra cui somma, somma ponderata, media, prodotto, prodotto ponderato, max, min, ecc.
 Tags: multibiometrics
-
+<!--ID: 1706223018623-->
 END
 
 ---
@@ -645,7 +645,7 @@ L'andatura, la digitazione dei tasti, il modo in cui firmi, ecc., no
 
 La risposta è ovviamente quelli che non sono falsificabili.
 Tags: traits spoofing
-
+<!--ID: 1706223018629-->
 END
 
 ---
@@ -700,7 +700,7 @@ Un esempio di studio statico è lo studio della **microtexture** dell'immagine a
 
 Possiamo avere anche una Score level fusion dove possiamo fondere antispoofing e riconoscimento in un unico modulo oppure effettuare anticipatamente l'anti-spoofing e procedere al riconoscimento solo se l'antispoofing restituisce una risposta genuina.
 Tags: spoofing
-
+<!--ID: 1706223018637-->
 END
 
 ---
@@ -723,7 +723,7 @@ In alcuni casi possiamo fondere il riconoscimento e l’anti-spoofing in un unic
 
 Quindi possiamo combinare un Classificatore Biometrico con un **Classificatore Binario**, perché un Classificatore Antispoofing non è che un algoritmo di sistema in grado di decidere se una sonda è genuina o meno.
 Tags: spoofing
-
+<!--ID: 1706223018644-->
 END
 
 ---
@@ -738,7 +738,7 @@ Quindi in quel caso non vogliamo essere riconosciuti
 
 Introduciamo infatti elementi estranei sul viso il processo di rilevamento potrebbe fallire.
 Tags: face-recog spoofing
-
+<!--ID: 1706223018653-->
 END
 
 ---
@@ -833,7 +833,7 @@ In questo caso esiste un tipo speciale di pattern chiamato **moiré pattern alia
 
 In pratica, ogni volta che è presente una sorta di motivo moiré, possiamo concludere che siamo in presenza di un attacco di parodia di replay.
 Tags: face-recog spoofing
-
+<!--ID: 1706223018661-->
 END
 
 ---
@@ -912,7 +912,7 @@ Hanno poche caratteristiche distintive, quindi pochi sono correttamente riconosc
 
 Si **riduce il tasso di errore** causato dagli utenti particolari senza toccare la threshold, **abbassando la soglia** solo per gli **utenti in particolare**.
 Tags: zoo
-
+<!--ID: 1706223018669-->
 END
 
 ---
@@ -943,7 +943,7 @@ L'**occlusione** influenza il 3D come influenza il 2D
 
 Possiamo riassumere i **pro e i contro** delle strategie 3D dicendo che: in 3D abbiamo molte più informazioni, i modelli costruiti sono molto più robusti ad una serie di distorsioni, c'è la possibilità di sintetizzare (approssimativamente) immagini 2D da pose 3D virtuali ed espressioni calcolate da un modello 3D (**PRO**); il costo dei dispositivi, il costo computazionale delle procedure, il possibile rischio che alcuni dispositivi di acquisizione possono presentare, ad esempio il laser scanner è pericoloso per l'occhio (**CON**).
 Tags: recognizer
-
+<!--ID: 1706223018676-->
 END
 
 ---
@@ -964,7 +964,7 @@ I Morphable model consentono inoltre di sintetizzare le espressioni del viso app
 
 Questo si basa su un set di dati di facce 3D e richiede che tra le facce ci sia una piena corrispondenza (allineamento).
 Tags: morphable
-
+<!--ID: 1706223018684-->
 END
 
 ---
@@ -987,7 +987,7 @@ In **Linear Discriminant Analysis** (LDA) si etichettano i campioni per ogni sog
 
 Questo tipo di partizionamento aiuta ad apprendere meglio quali sono gli elementi nel nuovo spazio che meglio si riferiscono alle intra-personal variations rispetto a quelli che in realtà si riferiscono alle inter-personal variations (che sono quelle che ci interessano).
 Tags: machine-learning
-
+<!--ID: 1706223018691-->
 END
 
 ---
@@ -998,7 +998,7 @@ What is the **other biometric feature** (beyond the iris) that has random traits
 Back: 
 **Fingerprints**
 Tags: general-question
-
+<!--ID: 1706223018697-->
 END
 
 ---
@@ -1009,7 +1009,7 @@ Come si potrebbe **irrobustire** un sistema biometrico con una **gallery di sogg
 Back: 
 in fase di verifica si possono usare **threshold adattive**
 Tags: general-question
-
+<!--ID: 1706223018705-->
 END
 
 ---
@@ -1023,7 +1023,7 @@ Nel **face recognition**
 
 È possibile rilevare questo modello speciale utilizzando Multi-scale LBP e DSFIT (questo cerca di rilevare le caratteristiche con la più alta energia nell'immagine).
 Tags: face-recog
-
+<!--ID: 1706223018712-->
 END
 
 ---
@@ -1033,7 +1033,7 @@ Che cos'è il **DSFIT**?
 Back: 
 Dense Scale Invariant Feature Transform: algoritmo per fare **face-recognition**
 Tags: face-recognition
-
+<!--ID: 1706223018720-->
 END
 
 ---
@@ -1043,7 +1043,7 @@ Che cos'è **Adaboost**?
 Back: 
 **È un algoritmo di ML fatto con i pesi**: inizialmente tutte le ipotesi hanno lo stesso peso e successivamente ognuna di queste, a seconda di come viene predetta, aumenta o diminuisce.
 Tags: adaboost
-
+<!--ID: 1706223018726-->
 END
 
 ---
@@ -1057,7 +1057,7 @@ Back:
 
 Esempio classico: iride, fingerprints, vessels patterns (le vene)
 Tags: definition general-question
-
+<!--ID: 1706223018733-->
 END
 
 ---
@@ -1067,7 +1067,7 @@ Shapes of fingerprints?
 Back: 
 ![[Screenshot_20240125_223710.png]]
 Tags: fingerprints
-
+<!--ID: 1706223018741-->
 END
 
 ---
@@ -1080,7 +1080,7 @@ Back:
 3. (**abbassare la testa**)
 
 Tags: face-recog
-
+<!--ID: 1706223018748-->
 END
 
 ---
@@ -1092,7 +1092,7 @@ Back:
 
 Il sistema deve capire se la **claim è genuina**.
 Tags: definition
-
+<!--ID: 1706223018756-->
 END
 
 ---
@@ -1104,7 +1104,7 @@ A differenza dei sistemi di ML, dove siamo interessati a quante risposte corrett
 
 Non siamo interessati al numero assoluto, ma al **FAR**: FA / FA + TN.
 Tags: 
-
+<!--ID: 1706223018763-->
 END
 
 ---
@@ -1116,7 +1116,7 @@ Ovviamente in immagini o task complessi con un solo gabor filter non è possibil
 
 Ovvero, applicando un filtro su un’immagine otterremo in output una nuova immagine che puo essere appiattita e utilizzata come vettore di feature
 Tags: face-recog
-
+<!--ID: 1706223018771-->
 END
 
 ---
@@ -1136,5 +1136,5 @@ E’ possibile creare diversi Gabor filter andando a cambiare i seguenti paramet
 
 - σ: larghezza di banda, controlla la scala generale determinando anche il **numero di strisce**; aumentando questo valore avremo più strisce con meno distanza tra loro.
 Tags:  face-recog
-
+<!--ID: 1706223018778-->
 END

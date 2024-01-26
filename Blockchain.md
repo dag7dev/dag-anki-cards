@@ -16,7 +16,7 @@ Back:
 > THE BLOCKCHAIN IS NOT A DATABASE: it is a TRANSACTION LIST
 
 Tags: btc definitions
-
+<!--ID: 1706231523626-->
 END
 
 ---
@@ -27,7 +27,7 @@ Back:
 Databases are used to store data, blockchain are used to **store transactions**
 
 Tags: btc database
-
+<!--ID: 1706231523630-->
 END
 
 ---
@@ -39,7 +39,7 @@ Back:
 **Transfer of assets** from account A to B.
 Transactions are sequentially stored, **the order matters!**
 Tags: btc definitions
-
+<!--ID: 1706231523634-->
 END
 
 ---
@@ -54,7 +54,7 @@ To make sure to verify the person, we could use some methods: the account **sign
 
 
 Tags: btc definitions account
-
+<!--ID: 1706231523640-->
 END
 
 ---
@@ -87,7 +87,7 @@ A similar problem, could theoretically be performed by the 51% attack.
 - so the attacker has purchased something and had his BTCs back
 
 Tags: btc problem blockchain consensus
-
+<!--ID: 1706231523645-->
 END
 
 ---
@@ -103,7 +103,7 @@ As far as transactions grow as long as block are produced
 - the order matters as well, exactly like transactions!
 
 Tags: btc definitions
-
+<!--ID: 1706231523649-->
 END
 
 ---
@@ -114,7 +114,7 @@ What a wallet is?
 Back: 
 A **wallet** is a lightweight client that fetches only blocks it's interested to.
 Tags: definitions
-
+<!--ID: 1706231523653-->
 END
 
 ---
@@ -125,7 +125,7 @@ Are data permanent on the blockchain?
 Back: 
 Yes, data is **immutable**.
 Tags: definitions
-
+<!--ID: 1706231523659-->
 END
 
 ---
@@ -149,7 +149,7 @@ Facts:
 A smart contract is **forever**! We can retire a contract, but if we have a bug it will live forever.
 
 Tags: eth ethereum smart-contracts
-
+<!--ID: 1706231523664-->
 END
 
 ---
@@ -159,7 +159,7 @@ A Smart Contract can invoke an account?
 Back: 
 NOPE. FALSE! THE OTHER WAY ROUND!!!!
 Tags: eth ethereum smart-contracts
-
+<!--ID: 1706231523669-->
 END
 
 ---
@@ -174,7 +174,7 @@ Back:
 - The code needs to be complicated (fees)!
 - The code is half public and half not.
 Tags: eth ethereum smart-contracts
-
+<!--ID: 1706231523674-->
 END
 
 ---
@@ -184,7 +184,7 @@ What the web3.0 is?
 Back: 
 - classic client-server infrastructure with smart contracts behind
 Tags: eth ethereum smart-contracts
-
+<!--ID: 1706231523679-->
 END
 
 ---
@@ -195,7 +195,7 @@ Why PoW exists?
 Back: 
 PoW in Bitcoin forces node to prove computational effort to publish new blocks
 Tags: btc bitcoin
-
+<!--ID: 1706231523683-->
 END
 
 ---
@@ -211,7 +211,7 @@ You have a deterministic algorithm -> if you input something twice it must outpu
 This output is unreadable, no secret key involved: FINDING A SOLUTION IS HARD BUT EVERYONE MUST BE ABLE TO CHECK IT!
 
 Tags: definitions
-
+<!--ID: 1706231523688-->
 END
 
 ---
@@ -227,7 +227,7 @@ We can resell tokens in terms of money.
 I can buy some flowers coins in euros
 
 Tags: 
-
+<!--ID: 1706231523693-->
 END
 
 ---
@@ -238,7 +238,7 @@ What a ledger is?
 Back: 
 - **ledger** is a **collation of transactions**
 Tags: definitions
-
+<!--ID: 1706231523698-->
 END
 
 ---
@@ -271,7 +271,7 @@ The usual steps are:
 
 
 Tags: btc mining
-
+<!--ID: 1706231523703-->
 END
 
 ---
@@ -294,7 +294,7 @@ Back:
 	- Fees = _Sum(Inputs) – Sum(Outputs_).
 
 Tags: btc mining transactions
-
+<!--ID: 1706231523707-->
 END
 
 ---
@@ -305,7 +305,7 @@ Privacy of a blockchain: public, private, permission-less, permissioned
 Back: 
 
 Tags: definitions
-
+<!--ID: 1706231523712-->
 END
 
 ---
@@ -332,7 +332,7 @@ The algorithm:
 To speed up calculations we use ASICS inexpensive machines that do not have the full hardware of a computer (they have ton of memory).
 
 Tags: definitions proof-of-work btc
-
+<!--ID: 1706231523716-->
 END
 
 ---
@@ -351,7 +351,7 @@ Inside a block there is:
 - transaction list
 
 Tags: transactions blocks
-
+<!--ID: 1706231523720-->
 END
 
 ---
@@ -386,7 +386,7 @@ Usually Bitcoin exceeding part transaction could be used in two ways:
 
 
 Tags: transactions
-
+<!--ID: 1706231523724-->
 END
 
 ---
@@ -401,7 +401,7 @@ Transaction occurs, if and only if:
 3. The **total** value of the **inputs** **must equal or exceed** the **total** value of the **outputs**
 
 Tags: transactions
-
+<!--ID: 1706231523728-->
 END
 
 ---
@@ -414,7 +414,7 @@ Back:
 - A **coinbase** is a special field used as the sole input for coinbase transactions. The coinbase allows **claiming the block reward** and provides up to 100 bytes for arbitrary data.
 
 Tags: transactions
-
+<!--ID: 1706231523732-->
 END
 
 ---
@@ -428,7 +428,7 @@ SPV allows a lightweight client to **verify that a transaction** is included in 
 **The SPV client** only needs download the block headers, which are much smaller than the full blocks. To verify that a transaction is in a block, a SPV client requests a proof of inclusion, in the form of a Merkle branch.
 
 Tags: clients spv
-
+<!--ID: 1706231523737-->
 END
 
 ---
@@ -439,7 +439,7 @@ In the Bitcoin network, accounts 0xA, 0xB, and 0xC have balances worth 10, 5, an
 Back: 
 10 / 5 / 7
 Tags: exercise
-
+<!--ID: 1706231523741-->
 END
 
 ---
@@ -450,7 +450,7 @@ In the Bitcoin network, account 0xA has the following UTXOs whose nominal values
 Back: 
 17 / 3
 Tags: exercise
-
+<!--ID: 1706231523745-->
 END
 
 ---
@@ -461,7 +461,7 @@ Which of the following units is in use for Bitcoin payments?
 Back: 
 Satoshi
 Tags: definition
-
+<!--ID: 1706231523749-->
 END
 
 ---
@@ -474,7 +474,7 @@ is right-shifted every 210.000 txs
 
 IT IS WRONG " is halved every 105.000 transactions"
 Tags: definition
-
+<!--ID: 1706231523754-->
 END
 
 ---
@@ -487,7 +487,7 @@ The difference between input and output of a tx.
 - **input is always higher than output**
 
 Tags: definition
-
+<!--ID: 1706231523758-->
 END
 
 ---
@@ -501,7 +501,7 @@ Back:
 	- if they have the same chains, then **who arrives before**
 In ethereum they're called **ommers** and 
 Tags: blocks
-
+<!--ID: 1706231523762-->
 END
 
 ---
@@ -512,7 +512,7 @@ Why Ethereum exists?
 Back: 
 To allow smart contract to be runned on the network.
 Tags: eth ethereum definitions
-
+<!--ID: 1706231523766-->
 END
 
 ---
@@ -526,7 +526,7 @@ Back:
 	- **CA**: **contract**, that can be triggered by sending a transaction and can also create or call other contracts.
 
 Tags: eth ethereum
-
+<!--ID: 1706231523770-->
 END
 
 ---
@@ -544,7 +544,7 @@ Addresses in Ethereum have UUID using **Keccak-256 algorithm**, that produces mi
 				- 0 0 1 d 3 F (so original + hash, the Keccak version)
 
 Tags: keccak address eth ethereum
-
+<!--ID: 1706231523774-->
 END
 
 ---
@@ -560,7 +560,7 @@ Back:
 	- **balance**: number of weis
 
 Tags: eth ethereum
-
+<!--ID: 1706231523778-->
 END
 
 ---
@@ -583,7 +583,7 @@ Putting a nonce **protect from double-spending**: a malicious user since ETH tra
 In bitcoin, transactions don't have nonce at all, you use only only for proof of work
 
 Tags: eth ethereum nonce
-
+<!--ID: 1706231523782-->
 END
 
 ---
@@ -598,7 +598,7 @@ Back:
 	- There is a cost associated to the running of programs on the EVM: this is called **gas**
 
 Tags: eth ethereum
-
+<!--ID: 1706231523786-->
 END
 
 ---
@@ -626,7 +626,7 @@ This **limit** is applied to **total gas execution**, including sub transactions
 As usual, the lower gas price, the higher chance that their transactions will be mined soon.
 
 Tags: eth ethereum
-
+<!--ID: 1706231523790-->
 END
 
 ---
@@ -644,7 +644,7 @@ Before the upgrade, users would essentially participate in an open auction every
 
 Rather than holding a blind auction every block to determine the gas price, ethereum’s protocol will algorithmically decide the transaction fee based upon overall demand on the network.
 Tags: eth ethereum
-
+<!--ID: 1706231523794-->
 END
 
 ---
@@ -657,7 +657,7 @@ Back:
 - in Proof Of Work, miners put capital at risk by **expending energy**
 
 Tags: eth ethereum
-
+<!--ID: 1706231523798-->
 END
 
 ---
@@ -675,7 +675,7 @@ LMD: latest message-driven greedy heaviest observed sub-tree
 ![[Screenshot_20231126_193729.png]]
 
 Tags: eth ethereum algorithms
-
+<!--ID: 1706231523802-->
 END
 
 ---
@@ -707,7 +707,7 @@ Certified HAHA moment:
 	- after a while!
 
 Tags: eth ethereum
-
+<!--ID: 1706231523806-->
 END
 
 ---
@@ -719,7 +719,7 @@ Back:
 - sync comittee reward
 - proposer reward for an attested block
 Tags: eth ethereum
-
+<!--ID: 1706231523811-->
 END
 
 ---
@@ -746,7 +746,7 @@ But there may be penalties:
 	- not participating or signing the wrong header
 
 Tags: eth ethereum
-
+<!--ID: 1706231523815-->
 END
 
 ---
@@ -760,7 +760,7 @@ Ethereum uses a proof-of-stake-based consensus mechanism that derives its crypto
 
 The replacement of the PoW chain with the PoS chain in Ethereum was named… the merge!
 Tags: definitions ethereum eth
-
+<!--ID: 1706231523819-->
 END
 
 ---
@@ -770,7 +770,7 @@ Transactions in Ethereum are serialised via a scheme named?
 Back: 
 RLP
 Tags: transactions definitions ethereum eth
-
+<!--ID: 1706231523823-->
 END
 
 ---
@@ -802,7 +802,7 @@ Constraints may be:
 	- a resource can be loaded only for a **specific set of regions**
 
 Tags: eth ethereum seminars
-
+<!--ID: 1706231523827-->
 END
 
 ---
@@ -837,7 +837,7 @@ Using a centralized oracle doesn't preserve blockchain's decentralized character
 Using decentralized oracles on the other hand, has a bad performance (gas, latency), it adds a overhead for reaching consensus, but preserve blockchain's decentralized characteristics.
 
 Tags: seminars eth ethereum
-
+<!--ID: 1706231523831-->
 END
 
 ---
@@ -848,7 +848,7 @@ A3: Algorand
 Back: 
 Algorand, è troppo complicato e io non ho sbatti di scrivere nulla.
 Tags: seminars
-
+<!--ID: 1706231523836-->
 END
 
 ---
@@ -858,7 +858,7 @@ A4: Rug Pull, Defi and Dex
 Back: 
 See Distributed Systems notes on Google Drive.
 Tags: seminars eth ethereum
-
+<!--ID: 1706231523840-->
 END
 
 ---
@@ -870,7 +870,7 @@ Peer to peer google drive: distributed storage in the world.
 
 CP-ABE: CP -> Ciphertext-Policy and ABE -> Attribute Based Encryption
 Tags: seminars eth ethereum
-
+<!--ID: 1706231523844-->
 END
 
 ---
@@ -886,5 +886,5 @@ The term consensus mechanism refers to the entire stack of protocols, incentives
 - **Ethereum**: uses a proof-of-stake-based consensus mechanism that derives its crypto-economic security from a set of rewards and penalties applied to capital locked by stakers. This incentive structure encourages individual stakers to operate honest validators, punishes those who don't, and creates an extremely high cost to attack the network.
 
 Tags: eth btc ethereum blockchain
-
+<!--ID: 1706231523847-->
 END

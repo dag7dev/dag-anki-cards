@@ -35,7 +35,7 @@ Availability is usually the most important feature for a distributed system.
 
 - Paxos are AP but not C, because they allow different decisions on different sides of the partition.
 Tags: cap
-
+<!--ID: 1705928117215-->
 END
 
 ---
@@ -50,7 +50,7 @@ Da un punto di vista di FLP è asincrono e consenso è impossibile.
 La probabilità che l'agoritmo sia infinito è infinitesimale.
 Infinito significa che nessuno riesce a vedere la maggioranza su un valore, soprattutto se esistono faults.
 Tags: benor
-
+<!--ID: 1705928117220-->
 END
 
 ---
@@ -78,7 +78,7 @@ This helps tilt the system toward a decision, so that it converges to a consensu
 
 The complexity of this algorithm is **O(log n)** (say "A Performance Comparison of Algorithms for Byzantine Agreement in Distributed Systems" in case the prof says something).
 Tags: benor
-
+<!--ID: 1705928117224-->
 END
 
 ---
@@ -100,7 +100,7 @@ The FLP states that we cannot have all these three conditions in an asynchronous
 
 It also states that any consensus protocol in an async system can only have either termination or agreement.
 Tags: flp
-
+<!--ID: 1705928117229-->
 END
 
 ---
@@ -115,7 +115,7 @@ When you use Tor:
 - The final node (**exit node**) connects to the destination server on your behalf, maintaining your anonymity.  
 The handshake protocol works using Authenticated Diffie-Hellman, using the public key of the node we’re trying to connect to, also preventing Man-In-The-Middle (MITM) attacks. The key can be provided by trusted directory servers, or in the case of hidden services, it is actually encoded in the domain name itself (.onion v3).
 Tags: tor
-
+<!--ID: 1705928117233-->
 END
 
 ---
@@ -134,7 +134,7 @@ Back:
 4. **Exit Node Bottlenecks**: The exit node is the final relay in the Tor network before the traffic reaches its destination on the open internet. The bandwidth of the exit node can be a bottleneck, limiting the overall throughput of the Tor connection.  
 5. **UDP Traffic Handling**: Tor is primarily designed for TCP traffic, and handling UDP traffic introduces additional complexities and potential performance issues
 Tags: tor
-
+<!--ID: 1705928117238-->
 END
 
 ---
@@ -155,7 +155,7 @@ Il secondo round è proprio quello di recovery.
 Se esiste un crash in recovery: NON È POSSIBILE!
 Infatti se esistesse non avresti bisogno di fare il round di recovery
 Tags: async f-crash crash-failure
-
+<!--ID: 1705928117242-->
 END
 
 ---
@@ -183,7 +183,7 @@ We consume above three messages for free, because they are just 3 for 1000 insta
 
 If we have 3 acceptors in fast paxos, we are not allowed to have exactly 3 acceptors, but this is a bad idea: if there is not a majority, I will take any value
 Tags: paxos fast-paxos
-
+<!--ID: 1705928117247-->
 END
 
 ---
@@ -244,7 +244,7 @@ Since the acceptors have voted to not to vote for any round before i', the round
 
 5. f is the number of failures, n is the number of nodes, so **f=[(n-1)/2].** **The majority is (n-f).**
 Tags: paxos
-
+<!--ID: 1705928117251-->
 END
 
 ---
@@ -258,7 +258,7 @@ Wiki, or someone can directly know their onion address.
   
 A hidden service registers itself to a directory server, attaching its public key and a set of introduction points.
 Tags: tor
-
+<!--ID: 1705928117255-->
 END
 
 ---
@@ -275,7 +275,7 @@ The Hidden Service receives all of that, and if it is ok with that, it contacts 
 
 No one knows who is talking to, and also all these links are using a circuit by themselves (a link of 3 or more nodes, randomly picked by the protocol).
 Tags: tor
-
+<!--ID: 1705928117260-->
 END
 
 ---
@@ -304,7 +304,7 @@ The system works or crashes, nothing malicious happens.
 It is a condition where components may fail and there is imperfect information on whether a component has failed.
 A host is up and running, but it has a bad behavior (bug, malicious...).
 Tags: failure
-
+<!--ID: 1705928117265-->
 END
 
 ---
@@ -323,7 +323,7 @@ Back:
     - example: no deadlock
     - paxos: paxos is not live: rounds cannot be completed because of multiple promises from acceptors
 Tags: definitions properties
-
+<!--ID: 1705928117270-->
 END
 
 ---
@@ -337,7 +337,7 @@ If exit nodes are compromised, together with Guards (initial nodes), traffic cor
 and outgoing traffic, it knows both who is sending data and which site is receiving it.  
 In the case of only intermediate nodes compromised, they do not know anything about the sender and the receiver, so it is perfectly fine as long as they are not guards or exit nodes.
 Tags: tor
-
+<!--ID: 1705928117274-->
 END
 
 ---
@@ -357,7 +357,7 @@ Since the header of a block contains the hash of the previous one, after a numbe
 Every other node will receive the block from one of the miners (the fastest one for that specific block)
 and will proceed validating it: all transactions will be validated and also the correctness of the nonce with respect to the criteria we’ve mentioned earlier.
 Tags: bitcoin btc
-
+<!--ID: 1705928117278-->
 END
 
 
@@ -367,7 +367,7 @@ Describe Failure Detectors and their taxonomy
 
 Back: ![[Pasted image 20240122123131.png]]
 Tags: failure properties
-
+<!--ID: 1705928117283-->
 END
 
 ---
@@ -403,7 +403,7 @@ Does the common leader exist? Suppose a process picks a process P as its leader.
 	-  If ID(P’) > ID(P), that’s impossible for the point above
 	- Otherwise, I am considering P’ as crashed. Since FD is strongly accurate, it is actually crashed, so Q will eventually converge to P.
 Tags: Paxos failure-detector
-
+<!--ID: 1705928117287-->
 END
 
 ---
@@ -427,7 +427,7 @@ Under the same assumption, a process must send the Alive message every fixed amo
 Unfortunately, in an asynchronous system, messages can be lost and are not time bound.
 
 Tags: failure-detector
-
+<!--ID: 1705928117291-->
 END
 
 ---
@@ -472,7 +472,7 @@ actually needs.
 3. Leecher: downloads the file and becomes a seed when the download is over.
 4. Free-riders: downloads the file without uploading after.
 Tags: bittorrent
-
+<!--ID: 1705928117296-->
 END
 
 ---
@@ -489,7 +489,7 @@ The implementation is based on the following steps:
 
 This system loses Consistency (in the context of the CAP theorem), which is not so important in systems like CDNs.
 Tags: akamai cdn
-
+<!--ID: 1705928117300-->
 END
 
 ---
@@ -516,7 +516,7 @@ Specifically:
 	
 	Sequential Consistency is always possible when there is Linearizability (by respecting the same order) and it can be implemented with the Total Order Broadcast (without the broadcast of the reads)
 Tags: DSM
-
+<!--ID: 1705928117305-->
 END
 
 ---
@@ -531,7 +531,7 @@ A CDN works by storing and caching different static contents, distributing acros
 Also, it can improve the performance of the dynamic content because many requests for static content don’t need to be sent to the actual origin server because they are already cached by the CDN, so that it has more computational resources to compute dynamic content.
 Some CDNs also offer the possibility to serve dynamic content executing small scripts on edge servers, located near the final user.
 Tags: CDN
-
+<!--ID: 1705928117309-->
 END
 
 ---
@@ -550,7 +550,7 @@ human-friendly domain names into IP addresses.
 
 It can also reply with other information, based on the type of requested DNS records, such as A -> IPv4 address to visit, AAA -> IPv6 address, CNAME -> alias domain name, TXT -> text with various possible meanings, and so on.
 Tags: DNS
-
+<!--ID: 1705928117314-->
 END
 
 ---
@@ -572,7 +572,7 @@ Consider the following algorithm in which every process P do the following:
 		output = (ouptputp U Sq) - {q}
 	Broadcast the info so that everyone knows everything
 Tags: failure-detector weak-failure-detector
-
+<!--ID: 1705928117318-->
 END
 
 ---
@@ -605,7 +605,7 @@ Other concepts:
 - rug pull: at a some point, the owner of a smart contract (liquidity pool) closes the contract and gets all the money 
 - sniper bots: bots that allow you to buy at the lowest price possible
 Tags: seminars cryptos
-
+<!--ID: 1705928117323-->
 END
 
 ---
@@ -624,7 +624,7 @@ Back:
 
 In fact, FLP theorem says that consensus is impossible in async system in presence of any fault.
 Tags: paxos failures
-
+<!--ID: 1705928799770-->
 END
 
 ---
@@ -652,7 +652,7 @@ This is a big security issue because an attacker can redirect the user to some m
 
 By looking at the Round-Trip-Time it is possible to know if a target smartphone is sleeping, since it'd have a longer RTT than active smartphones. To get the IP address of the target the attacker can send a message to wake up the device using one of the popular messaging apps widely used, and then ping all the smartphones in the network (this means that the attacker will send millions of pings): the smartphone with the lowest RTT is the one the attacker is looking for. By performing this attack several times (within 20 messages) is it possible in 80% of the cases to correctly identify the smartphone's address, which can then be localized.
 Tags: seminars
-
+<!--ID: 1705929416471-->
 END
 
 ---
@@ -671,7 +671,7 @@ In a real world examples, there is a time out in each request: if time out expir
 
 Back: 
 Tags: 2fa
-
+<!--ID: 1705930203558-->
 END
 
 ---
@@ -691,7 +691,7 @@ In 2FA Commit you are stucked if you vote YES and you wait for the final decisio
 - you vote YES
 - everyone else but you is dead (you're alone)
 Tags: 2fa
-
+<!--ID: 1705930203566-->
 END
 
 ---
@@ -702,7 +702,7 @@ Show that the intersection of two consistent cuts is also a consistent cut.
 Back: 
 ![[Screenshot_20240122_232630.png]]
 Tags: properties
-
+<!--ID: 1705930203575-->
 END
 
 ---
@@ -718,7 +718,7 @@ if no reply 2 delta time then Dp <- q
 repeat every 2 delta time
 In case of false positive, double delta time.
 Tags: failure-detector
-
+<!--ID: 1705930203580-->
 END
 
 ---
@@ -738,7 +738,7 @@ Miners: work and find values to confirm blocks
 Paxos and fast-paxos are not good choices, because they can tolerate crash and failure but not byzantine-crysis, then no malicious user is allowed.
 
 Tags: bitcoin btc
-
+<!--ID: 1705930635597-->
 END
 
 ---
@@ -749,7 +749,7 @@ Show that every consistent global state can be reached by some run.
 Back: 
 ![[Pasted image 20240122232717.png]]
 Tags: cut clock
-
+<!--ID: 1705965300169-->
 END
 
 ---
@@ -762,7 +762,7 @@ Back:
 The protocol requires that each process, after receiving an initial take snapshot message, sends another take snapshot message to all other processes. This, assuming FIFO communication channels, ensures a consistent snapshot.
 Since after the local snapshot is taken, the messages that immediately follow are take snapshot messages, no event that occurs after the snapshot can cause an event that occurred before the snapshot on another process, because the take snapshot message arrives before any subsequent event message due to the channel being FIFO.
 Tags: lamport
-
+<!--ID: 1705965300173-->
 END
 
 START
@@ -773,7 +773,7 @@ It’s not possible to have a global clock among a distributed system, in fact t
 token loss detection, unreachable storage (garbage) collection, checkpointing and restarting, debugging, and in general, monitoring and reconfiguration. In this sense, a solution to GPE can be seen as the core of a generic solution for all these problems; what remains to be done is the formulation of the appropriate predicate and the construction of reactions or notifications to be executed when the predicate is satisfied.
 In fact, without a snapshot that builds a consistent global state we could occur in some problems like ghost deadlock, in which a deadlock is detected even if it will never happen in a consistent run. Also keeping the consistent global history will allow the system to recover until the snapshot checkpoint
 Tags: snapshot
-
+<!--ID: 1705965300178-->
 END
 
 ---
@@ -786,7 +786,7 @@ is reliable. (Note that your algorithm should be simpler than the Chandy–Lampo
 Back: 
 This means we have access to a real-time global clock. Assuming message delays are bounded to δ, the monitor process starts the protocol by broadcasting a “take a snapshot” message at time t0 for time t ≥ t0 +δ. At time t, each process sends its snapshot to the monitor, which can reorder the events in increasing timestamp order. Number of messages goes from O(n2), required by the Chandy-Lamport algorithm, to O(n).
 Tags: lamport
-
+<!--ID: 1705965300181-->
 END
 
 ---
@@ -797,7 +797,7 @@ Show that, if channels are not FIFO, then Chandy–Lamport snapshot algorithm do
 Back:
 ![[Pasted image 20240122233238.png]]
 Tags: lamport
-
+<!--ID: 1705965300185-->
 END
 
 ---
@@ -817,7 +817,7 @@ Q = n - f and f = n-1/2
 
 If we send the messages only to a majority, the number of messages is reduced at least to 3Q + Q \* l. Fault tolerance is provided by using this number of messages only in one round of Paxos, and then reverting to classic Paxos in case of failures
 Tags: paxos
-
+<!--ID: 1705965300189-->
 END
 
 ---
@@ -829,7 +829,7 @@ What is a fork in blockchain
 Back: 
 A fork is a division in the block chain that it’s verified when two different new blocks are accepted because both got the hash right. In this case, the blockchain keeps working in parallel on both, creating two different chains. The longest chain (the chain with the most effort, which is usually the longest) will be preferred because it will have the updated values. Once the best chain is found, the other is discarded.
 Tags: bitcoin btc
-
+<!--ID: 1705965300193-->
 END
 
 ---
@@ -840,7 +840,7 @@ Is blockchain safe? Is it live?
 Back: 
 ![[Pasted image 20240122234558.png]]
 Tags: bitcoin btc
-
+<!--ID: 1705965300197-->
 END
 
 ---
@@ -880,7 +880,7 @@ The order is (those above include those below??):
 - Sequential consistency
 - Linearizability / atomic consistency / strict consistency
 Tags: DSM
-
+<!--ID: 1705965300200-->
 END
 
 ---
@@ -902,7 +902,7 @@ The chones feature were: writing style (messages length, emojis, ecc…), tempor
 
 In the end the best model found was using an MLP (Multilayer perceptron, not my little pony) classifier with an F1 score of ≈85%.
 Tags: seminars
-
+<!--ID: 1705965300204-->
 END
 
 ---
@@ -918,7 +918,7 @@ Consensus Problem.
 4. If there are no failures, and all the processes has voted "yes", than the decision must be "commit" (final) 
 5. in a system that allows for process to fail, if the failures are repaired and if the process can rollback to the process sequence, then the transaction must get completed
 Tags: 2fa consensus
-
+<!--ID: 1705965300208-->
 END
 
 ---

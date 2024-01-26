@@ -3,19 +3,27 @@ This repository contains Anki cards in markdown format. The cards are organized 
 
 All cards are in English, except where otherwise specified.
 
+Spread markdown, not word documents or pdfs. :heart:
+
 ## Disclaimer
 All cards are derivative works of:
 - my notes
 - papers
 - websites
-- public documents (e.g. Google Docs, pdf...) that I have access to
+- public documents (e.g. Google Docs, pdf...) 
 
-The cards are provided as-is, without any warranty. Me and the original authors of the documents from which I took the cards are not responsible for any damage caused by the cards or any improper use of the cards. We are not liable in case you fail to learn anything because you relied on these cards, or in case of misinterpretation of the cards, or in case of any other problem. **Use at your own risk.**
+The cards are provided as-is, without any warranty. Me and the original authors of the documents are not responsible for any damage caused by the cards or any improper use of the cards. We are not liable in case you fail to learn anything because you relied on these cards, or in case of misinterpretation of the cards, or in case of any other problem. **Use at your own risk**.
+The cards are obviously not guaranteed to be correct, complete, up-to-date or fit for any purpose. 
+Think of them as a starting point for your studies, not as a replacement.
+
 Do not use these cards if you don't agree with the above.
 
 ## Content
 - `Biometrics.md`: cards about biometric systems (e.g. fingerprint, iris, face recognition)
   - They are in Italian
+  - Topics not covered
+    - Ear recognition
+    - Keystroke recognition
 - `Distributed Systems.md`: cards about distributed systems (e.g. paxos, consensus, fault tolerance...)
   - Topics not covered
     - Algorand: ♋
@@ -46,8 +54,9 @@ NOTE: for now, apkg files are not updated automatically. See last commit date. I
 4. Download [Obsidian](https://obsidian.md/) and open the Obsidian vault in this repository.
 5. Download the [Obsidian_to_Anki](https://github.com/Pseudonium/Obsidian_to_Anki/) plugin and the follow the instructions.
 6. Create decks in Anki for each of the `.md` files in this repository. Each deck should have the same name as the `.md` file (TBH, see each markdown file for the name of the deck).
-7. Click on the button in the left sidebar with the "Anki" icon and follow the instructions.
-8. Done! You should now have all the cards in your Anki decks.
+7. Import the `.apkg` files in the `decks` folder in Anki.
+8. Click on the button in the left sidebar with the "Anki" icon to sync Obisidian to Anki and wait.
+9. Done! You should now have all the cards in your Anki decks.
 
 ## How to contribute
 1. Fork this repository.
@@ -55,9 +64,16 @@ NOTE: for now, apkg files are not updated automatically. See last commit date. I
 3. Create a pull request.
 4. Done! I'll review your changes and merge them if they're good.
 
-Do not commit markdown files with `<!-- -->` comments. They're used by the Obsidian_to_Anki plugin to generate the `.apkg` files. Not removing them will result in the cards not being updated.
+Do not remove the `<!-- -->` lines. They're used by the Obsidian_to_Anki plugin to generate the `.apkg` files. Removing them will result in the cards not being updated.
 
-If you need it, use this regex to remove them: `<!--[\s\S]*?-->` and after you're done, undo the changes to the `.md` files so you won't lose the progress you made on Anki.
+Also, if using Markdown, remember to import the `.apkg` files in Anki to update the decks, otherwise you'll have to do it manually (since in md files the comments are present, so the extension thinks the cards are already in the deck).
+
+If you need it, use this regex to remove them: `<!--[\s\S]*?-->` and after you're done, undo the changes to the `.md` files so you won't lose tyour progress on Anki.
+
+## Why
+I use [Obsidian](https://obsidian.md/) to take notes. Obsidian is a markdown editor that allows you to create links between notes. It also has a wonderful plugin called [Obsidian_to_Anki] that allows you to export markdown notes to Anki cards. I use Anki to memorize things.
+
+Markdown is a wonderful format for taking notes, but it's not very good for memorizing things. Anki is a wonderful tool for memorizing things, but it's not very good for taking notes. This repository is an attempt to combine the two.
 
 ## Credits
 - The awesome people who wrote the original documents from which I took the cards. Thank you! :heart:
