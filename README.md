@@ -17,13 +17,19 @@ Do not use these cards if you don't agree with the above.
 - `Biometrics.md`: cards about biometric systems (e.g. fingerprint, iris, face recognition)
   - They are in Italian
 - `Distributed Systems.md`: cards about distributed systems (e.g. paxos, consensus, fault tolerance...)
-- `Blockchain.md`: cards about blockchain (e.g. bitcoin, ethereum, smart contracts...)
-  - Missing arguments
-    - Algorand: I won't add them. Sorry. Feel free to add them yourself.
-    - Rug Pull - Defi and Dex: they're already covered by distributed systems cards
-    - IPFS: that seminar was about IPFS cryptography, that is veery very long and complex.
+  - Topics not covered
+    - Algorand: ♋
+    - GDPR Seminar
+    - BGP Seminar
+    - some particular long or complicated exercises (never seen at the exam, but only on exercises pdf. See the pdf sent by Tommaso if you want the solutions or check GitHub "SapienzaStudents" repo)
 
-Feel free to add the cards you need or modify the existing ones.
+- `Blockchain.md`: cards about blockchain (e.g. bitcoin, ethereum, smart contracts...)
+  - Topics not covered
+    - Algorand: Feel free to add it yourself.
+    - Rug Pull - Defi and Dex: they're already covered by distributed systems cards
+    - IPFS: that seminar was about IPFS cryptography, that is veery very long and complex. But in short IPFS is explained.
+
+Feel free to add the cards you need or modify the existing ones on the markdown file.
 
 ## How to use (for Anki users)
 1. Download the [Anki desktop app](https://apps.ankiweb.net/).
