@@ -1,6 +1,6 @@
 ---
 date_created: 2024-01-22
-date_modified: 2024-01-26
+date_modified: 2024-01-29
 ---
 TARGET DECK: Blockchain
 START
@@ -342,12 +342,13 @@ Basic
 How a block is made of?
 Back: 
 Inside a block there is:
+- block size
 - block header
 	- hash previous block header
 	- timestamp
 	- nonce
 	- merkle root hash
-- hash (block01 header)
+- transaction counter
 - transaction list
 
 Tags: transactions blocks
@@ -876,7 +877,7 @@ END
 ---
 START
 Basic
-Consensus on blockchain vs. consensus on ethereum
+Consensus on bitcoin vs. consensus on ethereum
 Back: 
 The term consensus mechanism refers to the entire stack of protocols, incentives and ideas that allow a network of nodes to agree on the state of a blockchain.
 
