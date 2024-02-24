@@ -1055,7 +1055,7 @@ Back:
 
 **Genotipico** il contrario
 
-Esempio classico: iride, fingerprints, vessels patterns (le vene)
+Esempio classico: iride, fingerprints, **vessels patterns (le vene)**
 Tags: definition general-question
 <!--ID: 1706223018733-->
 END
@@ -1137,4 +1137,21 @@ E’ possibile creare diversi Gabor filter andando a cambiare i seguenti paramet
 - σ: larghezza di banda, controlla la scala generale determinando anche il **numero di strisce**; aumentando questo valore avremo più strisce con meno distanza tra loro.
 Tags:  face-recog
 <!--ID: 1706223018778-->
+END
+
+---
+START
+Basic
+Come si fa una ear recognition?
+Back:
+**Ear recognition** è un task di **image recognition**.
+
+Funziona in questo modo: 
+1. **Segmentazione**: si estrae l’orecchio dall’immagine
+2. **Feature extraction**: si estraggono le feature discriminanti
+3. **Matching**: si confrontano le feature estratte con quelle presenti in un database
+4. **Decision making**: si decide se l’orecchio appartiene o meno alla persona che sta facendo il claim
+
+Fare ear recognition è difficile perché l’orecchio è un tratto biometrico **non uniforme** e **non standardizzato**, quindi è difficile trovare un metodo che funzioni bene in tutte le situazioni.
+
 END
