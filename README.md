@@ -21,9 +21,10 @@ Do not use these cards if you don't agree with the above.
 ## Content
 - `Biometrics.md`: cards about biometric systems (e.g. fingerprint, iris, face recognition)
   - They are in Italian
-  - Topics not covered
-    - Ear recognition
+  - Topics not covered (give a look by yourself)
     - Keystroke recognition
+    - Gait recognition
+
 - `Distributed Systems.md`: cards about distributed systems (e.g. paxos, consensus, fault tolerance...)
   - Topics not covered
     - Algorand: ♋
@@ -36,6 +37,9 @@ Do not use these cards if you don't agree with the above.
     - Algorand: Feel free to add it yourself.
     - Rug Pull - Defi and Dex: they're already covered by distributed systems cards
     - IPFS: that seminar was about IPFS cryptography, that is veery very long and complex. But in short IPFS is explained.
+
+- `Big Data Computing.md`: cards about big data computing (e.g. hadoop, mapreduce, spark...)
+  - Topics not covered: Hadoop and Spark syntax, algorithms too in-depth
 
 Feel free to add the cards you need or modify the existing ones on the markdown file.
 
