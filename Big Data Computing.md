@@ -237,12 +237,17 @@ END
 
 START
 Basic
-Multicore: what does irqbalace Linux does?
+Multicore: what does irqbalance Linux does?
 Back:
-1. Balance interrupt once or periodically (static vs dynamic)
-2. Tell which interrupts should go to which CPU (affinity)
-3. Tell which CPUs should not handle which interrupts (!affinity)
-4. Which interrupts should not be balanced (manual pinning)
+`irqbalance` is a Linux utility designed to distribute interrupt requests (IRQs) across multiple processors in a system to optimize performance. It aims to balance the load of handling hardware interrupts among the available CPUs. Here are the main functions of `irqbalance`:
+1. **Balancing Interrupts:**
+	- **Static vs. Dynamic Balancing:** `irqbalance` can either statically assign interrupts to specific CPUs or dynamically balance them periodically. Static balancing means that interrupts are assigned to specific CPUs and remain there, while dynamic balancing allows `irqbalance` to periodically reassess and redistribute interrupts based on the current system load.
+2. **Interrupt Affinity:**
+	- `irqbalance` can be configured to set the affinity of specific interrupts to particular CPUs. Affinity refers to the association between an interrupt and a specific CPU. By assigning interrupts to specific CPUs, `irqbalance` aims to improve cache locality and reduce contention for shared resources.
+3. **Avoiding CPU-Interrupt Pairing:**
+	- `irqbalance` can be configured to specify which CPUs should not handle specific interrupts (!affinity). This helps avoid pairing certain CPUs with particular interrupts, which might be useful for optimizing the performance of specific tasks or applications.
+4. **Manual Pinning:**
+	- `irqbalance` supports manual pinning, allowing users to specify which interrupts should not be balanced. Manual pinning is useful when certain interrupts need to be handled by specific CPUs, and dynamic balancing is not desired for those interrupts.
 <!--ID: 1708701022759-->
 END
 ---
@@ -435,7 +440,6 @@ The advantages are:
 - lower latency
 - lower cpu utilization
 - higher throughput
-
 <!--ID: 1708701022774-->
 END
 ---
