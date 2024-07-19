@@ -43,6 +43,8 @@ Do not use these cards if you don't agree with the above.
 
 - `Multimodal Interaction`: cards about multimodal interaction (e.g. speech recognition, gesture recognition, multimodal fusion...). Big thanks to [Riccardo](https://github.com/riccardoscuto).
 
+- `Human Computer Interaction on the Web`: cards about human computer interaction. All the main topics are explained, excepts for voice interactions and chatbots. Special thanks to [Lorenzo](https://github.com/Lorenzoantonelli).
+
 Feel free to add the cards you need or modify the existing ones on the markdown file.
 
 ## How to use (for Anki users)
