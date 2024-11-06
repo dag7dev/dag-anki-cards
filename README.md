@@ -3,18 +3,18 @@ This repository contains Anki cards in markdown format. The cards are organized 
 
 All cards are in English, except where otherwise specified.
 
-Spread markdown, not word documents or pdfs. :heart:
+Spread markdown, not word documents or PDFs. :heart:
 
 ## Disclaimer
 All these cards are derivative works of:
-- my personal notes
+- my notes
 - papers
 - websites
 - public documents (e.g. Google Docs, pdf...)
 - private documents (e.g. notes shared by other students)
 
-The cards are provided as-is, without any warranty. Me and the original authors of the documents are not responsible for any damage caused by the cards or any improper use of the cards. We are not liable in case you fail to learn anything because you relied on these cards, or in case of misinterpretation of the cards, or in case of any other problem. **Use at your own risk**.
-The cards are obviously not guaranteed to be correct, complete, up-to-date or fit for any purpose. 
+The cards are provided as-is, without any warranty. I and the original authors of the documents are not responsible for any damage caused by the cards or any improper use of the cards. We are not liable in case you fail to learn anything because you relied on these cards, misinterpretation of the cards, or any other case. **Use at your own risk**.
+The cards are not guaranteed to be correct, complete, up-to-date, or fit for any purpose. 
 Think of them as a starting point for your studies, not as a replacement.
 
 Do not use these cards if you don't agree with the above.
@@ -26,7 +26,7 @@ Do not use these cards if you don't agree with the above.
     - Keystroke recognition
     - Gait recognition
 
-- `Distributed Systems.md`: cards about distributed systems (e.g. paxos, consensus, fault tolerance...)
+- `Distributed Systems.md`: cards about distributed systems (e.g. Paxos, consensus, fault tolerance...)
   - Topics not covered
     - Algorand: ♋
     - GDPR Seminar
@@ -37,14 +37,15 @@ Do not use these cards if you don't agree with the above.
   - Topics not covered
     - Algorand: Feel free to add it yourself.
     - Rug Pull - Defi and Dex: they're already covered by distributed systems cards
-    - IPFS: that seminar was about IPFS cryptography, that is veery very long and complex. But in short IPFS is explained.
+    - IPFS: that seminar was about IPFS cryptography, which is very very long and complex. But in short, IPFS is explained.
 
-- `Big Data Computing.md`: cards about big data computing (e.g. hadoop, mapreduce, spark...)
-  - Topics not covered: Hadoop and Spark syntax, algorithms too in-depth
+- `Big Data Computing.md`: cards about big data computing (e.g. Hadoop, mapreduce, spark...)
+  - Topics not covered: Hadoop and Spark syntax, algorithms too in-depth, the second part of the course...
+  - IT IS NOT A COMPLETE DECK however, it is highly recommended as starting points. DO YOUR RESEARCH!
 
 - `Multimodal Interaction`: cards about multimodal interaction (e.g. speech recognition, gesture recognition, multimodal fusion...). Big thanks to [Riccardo](https://github.com/riccardoscuto).
 
-- `Human Computer Interaction on the Web`: cards about human computer interaction. All the main topics are explained, excepts for voice interactions and chatbots. List of topics:
+- `Human Computer Interaction on the Web`: cards about human-computer interaction. All the main topics are explained, except for voice interactions and chatbots. List of topics:
 ```
 1 Wearable devices
   - Features
@@ -99,7 +100,7 @@ Do not use these cards if you don't agree with the above.
   - Advantages over Traditional Interfaces
 8 HCI in the Car
   - Interactive Systems in Cars
-  - Unique Challenges of UI in Automotive Domain
+  - Unique Challenges of UI in the Automotive Domain
   - Hands-free Interaction
   - Advanced Control Systems
   - Keywords for HCI in Cars 
@@ -158,7 +159,7 @@ Feel free to add the cards you need or modify the existing ones on the markdown 
 3. Import the `.apkg` files in the `decks` folder in Anki.
 4. Done! You should now have all the cards in your Anki decks.
 
-NOTE: for now, apkg files are not updated automatically. See last commit date. If you want to update them, you have to do it manually (see below).
+NOTE: for now, apkg files are not updated automatically. See the last commit date. If you want to update them, you have to do it manually (see below).
 
 ## How to use (for Obsidian and Anki users)
 1. Download the [Anki desktop app](https://apps.ankiweb.net/).
@@ -179,9 +180,9 @@ NOTE: for now, apkg files are not updated automatically. See last commit date. I
 
 Do not remove the `<!-- -->` lines. They're used by the Obsidian_to_Anki plugin to generate the `.apkg` files. Removing them will result in the cards not being updated.
 
-Also, if using Markdown, remember to import the `.apkg` files in Anki to update the decks, otherwise you'll have to do it manually (since in md files the comments are present, so the extension thinks the cards are already in the deck).
+Also, if using Markdown, remember to import the `.apkg` files in Anki to update the decks, otherwise, you'll have to do it manually (since in md files the comments are present, so the extension thinks the cards are already in the deck).
 
-If you need it, use this regex to remove them: `<!--[\s\S]*?-->` and after you're done, undo the changes to the `.md` files so you won't lose tyour progress on Anki.
+If you need it, use this regex to remove them: `<!--[\s\S]*?-->` and after you're done, undo the changes to the `.md` files so you won't lose your progress on Anki.
 
 ## Why
 I use [Obsidian](https://obsidian.md/) to take notes. Obsidian is a markdown editor that allows you to create links between notes. It also has a wonderful plugin called [Obsidian_to_Anki] that allows you to export markdown notes to Anki cards. I use Anki to memorize things.
