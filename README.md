@@ -150,7 +150,9 @@ Do not use these cards if you don't agree with the above.
   6.7 Amazon DynamoDB
   *6.8 S3 Object Storage
 ```
-  
+
+- `Risk Management`
+
 Feel free to add the cards you need or modify the existing ones on the markdown file.
 
 ## How to use (for Anki users)
@@ -195,7 +197,6 @@ Markdown is a wonderful format for taking notes, but it's not very good for memo
   - [Lorenzo](https://github.com/Lorenzoantonelli) - Human Computer Interaction on the Web and Multimodal Interaction
   - [Simone](https://github.com/SimoneSestito) - Cloud Computing
   - [Tommaso](https://github.com/Tommaso-Sgroi/) - Distributed Systems
-
 
 - My personal notes
 - [Obsidian](https://obsidian.md/) and [Anki](https://apps.ankiweb.net/)
